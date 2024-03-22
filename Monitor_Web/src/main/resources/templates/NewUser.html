@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/NewUser.css">
 </head>
 <body>
-    <div class="horizontal">
-    <H1>Creación de una cuenta</H1>
-        <div>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre*">
-            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos*">
-        </div>
-        <div>
-            <input type="text" name="date" id="date" placeholder="Fecha de nacimiento*">
-            <input type="text" name="dni" id="dni" placeholder="DNI*">
-        </div>
-        <div>
-            <input type="text" name="mail" id="mail" placeholder="Correo electronico*">
-            <input type="text" name="password" id="password" placeholder="Contraseña*">
-        </div>
-        <div class="horizontal">
-            <button>Crear Cuenta</button>
-            <button>Ya tengo una cuenta</button>
+    <div class="container-fluid">
+        <img src="https://www2.cruzroja.es/documents/5640665/13624839/CRUZ+ROJA+VERTICAL+ALTA.jpeg/c2a5f9d4-a060-286c-160f-b4de0a0b74c0?version=1.0&t=1610983902639&imagePreview=1" height="150px" alt="logo">
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-11">
+                <h1 class="text-center">Creación de una cuenta</h1>
+                <div class="form-group row">
+                    <div class="col">
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre*">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos*">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input type="text" class="form-control" name="date" id="date" placeholder="Fecha de nacimiento*">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="dni" id="dni" placeholder="DNI*">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <input type="email" class="form-control" name="mail" id="mail" placeholder="Correo electrónico*">
+                    </div>
+                    <div class="col">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña*">
+                    </div>
+                </div>
+                <div class="form-group botones">
+                    <button class="btn btn-primary btn-block">Crear Cuenta</button>
+                    <button class="btn btn-secondary btn-block mt-3">Ya tengo una cuenta</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
