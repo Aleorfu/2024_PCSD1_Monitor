@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url(https://estaticos-cdn.prensaiberica.es/clip/207f8360-cd76-4c13-8142-53034d58515e_16-9-discover-aspect-ratio_default_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.left-half,
+.right-half {
+    width: 50%; 
+    height: 100vh; /* Altura completa del cuerpo */
+}
+
+.left-half {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-half img{
+    max-width: 100%;
+    max-height: 511px;
+}
+
+.right-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50, 130, 184, 0.8);
+}
+
+.inicio{
+    margin-bottom: 50px;
+}
+
+.inicio h1{
+    margin-bottom: 50px;
+}
+
+.inicio input{
+    opacity: 1;
+    margin: 20px;
+}
+
+.right-half h1{
+    color: black;
+}
+
+.btn-primary, .btn-secondary{
+    width: 250px;
+    height: auto;
+}
+
+.btn-primary{
+    background-color: #0F4C75;
+}
+
+.btn-secondary{
+    background-color: #479AD2;
+}
+
+.botones button{
+    margin: 15px
+}
