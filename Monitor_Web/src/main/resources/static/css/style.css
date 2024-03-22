@@ -9,3 +9,23 @@
     align-items: center;
     justify-content: center;
 }
+.vertical{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    border-radius: 70%;
+}
+
+.blue{
+    height: 50px;
+    width: 100%;
+    background-color: #3282B8;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-sizing: border-box; 
+}
