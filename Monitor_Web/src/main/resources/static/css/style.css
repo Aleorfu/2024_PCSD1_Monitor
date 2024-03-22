@@ -33,3 +33,8 @@
 .usuario{
     background-color: #BBE1FA;
 }
+
+input{
+    border: none;
+    background-color: #E0E0E0;
+}
