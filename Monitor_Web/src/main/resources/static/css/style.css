@@ -35,6 +35,18 @@
 }
 
 input{
-    border: none;
     background-color: #E0E0E0;
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 15px;
+}
+
+input[type="text"]:focus, 
+input[type="text"]{
+    padding-left: 10px;
+}
+
+input:focus{
+    outline: none;
 }

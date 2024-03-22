@@ -51,3 +51,19 @@ body{
     color: black;
 }
 
+.btn-primary, .btn-secondary{
+    width: 250px;
+    height: auto;
+}
+
+.btn-primary{
+    background-color: #0F4C75;
+}
+
+.btn-secondary{
+    background-color: #479AD2;
+}
+
+.botones button{
+    margin: 15px
+}
