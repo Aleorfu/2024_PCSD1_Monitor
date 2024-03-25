@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/Style.css">
     <link rel="stylesheet" href="/static/css/Perfil.css">
 </head>
@@ -16,62 +17,51 @@
         </div>
     </div>
 
-
-    <div class="principal">
-        <div class="vertical">
-            <div class="horizontal">
-                <div class="vertical">
-                    <img src="https://img.wattpad.com/2958b1c762e46f2a0261c68149e9d5104ebdd391/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6573572d7338457a624c4c4a39773d3d2d313031303130383134382e313635623731383135353939326334353439353132303130383238302e6a7067?s=fit&w=720&h=720" height="150px" width="150px" alt="foto del usuario" class="img">
-                    <div class="horizontal">
-                        <button>Modificar foto</button>
-                        <button>Eliminar foto</button>
+    <div class="container mt-3 principal">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="" height="150px" width="150px" alt="foto del usuario" class="img">
+                    <div class="ms-3">
+                        <button class="btn btn-secondary me-2">Modificar foto</button>
+                        <button class="btn btn-danger">Eliminar foto</button>
                     </div>
                 </div>
-                
-                <div class="horizontal">
+                <div class="mb-3">
                     <h3>Contraseña actual</h3>
-                    <input type="text" name="password_old" id="password_old" placeholder="Contraseña actual">
+                    <input type="password" name="password_old" id="password_old" class="form-control" placeholder="Contraseña actual">
+                </div>
+                <div class="mb-3">
                     <h3>Contraseña nueva</h3>
-                    <input type="text" name="password_new" id="password_new" placeholder="Contraseña nueva">
-                    <button>Cambiar Contraseña</button>
+                    <input type="password" name="password_new" id="password_new" class="form-control" placeholder="Contraseña nueva">
                 </div>
+                <button class="btn btn-primary">Cambiar Contraseña</button>
             </div>
-        
-            <div class="horizontal">
-                <div class="vertical">
-                    <div>
-                        <h3>Nombre</h3>
-                        <input type="text" name="nombre" id="name" placeholder="Nombre">
-                    </div>
-    
-                    <div>
-                        <h3>DNI</h3>
-                        <input type="text" name="dni" id="dni" placeholder="DNI">
-                    </div>
-    
+            <div class="col-md-6 secundario">
+                <div class="mb-3">
+                    <h3 class="hnombre">Nombre</h3>
+                    <input type="text" name="nombre" id="name" class="form-control" placeholder="Nombre">
                 </div>
-    
-                <div class="vertical">
-                    <div>
-                        <h3>Primer apellido</h3>
-                        <input type="text" name="primer_apell" id="primer_apell" placeholder="Primer apellido">
-                    </div>
-    
-                    <div>
-                        <h3>Segundo apellido</h3>
-                        <input type="text" name="segundo_apell" id="segundo_apell" placeholder="segundo apellido">
-                    </div>
-    
+                <div class="mb-3">
+                    <h3 class="hdni">DNI</h3>
+                    <input type="text" name="dni" id="dni" class="form-control" placeholder="DNI">
                 </div>
-    
-                <div cl>
-                    <h3>Correo Electrónico</h3>
-                    <input type="text" name="gmail" id="gmail" placeholder="Correo">
+                <div class="mb-3">
+                    <h3 class="hapellido">Primer apellido</h3>
+                    <input type="text" name="primer_apell" id="primer_apell" class="form-control" placeholder="Primer apellido">
                 </div>
-    
-                <button>Guardar cambios</button>
+                <div class="mb-3">
+                    <h3 class="hapellido2">Segundo apellido</h3>
+                    <input type="text" name="segundo_apell" id="segundo_apell" class="form-control" placeholder="Segundo apellido">
+                </div>
+                <div class="mb-3">
+                    <h3 class="hcorreo">Correo Electrónico</h3>
+                    <input type="email" name="gmail" id="gmail" class="form-control" placeholder="Correo Electrónico">
+                </div>
+                <button class="btn btn-success">Guardar cambios</button>
             </div>
         </div>
     </div>
+    
 </body>
 </html>
