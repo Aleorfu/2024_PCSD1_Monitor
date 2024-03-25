@@ -18,7 +18,7 @@ fun Application.configureRouting() {
         get("/admin") {
             call.respond(ThymeleafContent("Admin", emptyMap()))
         }
-        get("/registro") {
+        get("/newuser") {
             call.respond(ThymeleafContent("NewUser", emptyMap()))
         }
         get("/perfil") {
