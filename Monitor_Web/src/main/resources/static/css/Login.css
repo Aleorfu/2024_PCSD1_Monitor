@@ -3,7 +3,7 @@ body{
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    background-image: url(https://estaticos-cdn.prensaiberica.es/clip/207f8360-cd76-4c13-8142-53034d58515e_16-9-discover-aspect-ratio_default_0.jpg);
+    background-image: url(/static/img/fondo.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -12,7 +12,7 @@ body{
 .left-half,
 .right-half {
     width: 50%; 
-    height: 100vh; /* Altura completa del cuerpo */
+    height: 100vh;
 }
 
 .left-half {
@@ -22,7 +22,6 @@ body{
 }
 
 .left-half img{
-    max-height: 511px;
     max-height: 511px;
 }
 

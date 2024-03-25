@@ -13,7 +13,23 @@ fun Application.configureRouting() {
             call.respondRedirect("/login")
         }
         get("/login") {
-            call.respond(ThymeleafContent("login", emptyMap()))
+            call.respond(ThymeleafContent("Login", emptyMap()))
+        }
+        get("/admin") {
+            call.respond(ThymeleafContent("Admin", emptyMap()))
+        }
+        get("/newuser") {
+            call.respond(ThymeleafContent("NewUser", emptyMap()))
+        }
+        get("/perfil") {
+            call.respond(ThymeleafContent("Perfil", emptyMap()))
+        }
+        get("/medico") {
+            call.respond(ThymeleafContent("Medico", emptyMap()))
+        }
+        get("/inicio") {
+            call.respond(ThymeleafContent("Usuario", emptyMap()))
         }
     }
+
 }
