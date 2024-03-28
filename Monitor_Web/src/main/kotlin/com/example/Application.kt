@@ -12,5 +12,5 @@ fun main() {
 
 fun Application.module() {
     configureRouting()
-    configureThymeleaf()
+    configureTemplating()
 }

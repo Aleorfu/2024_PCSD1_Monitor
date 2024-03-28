@@ -4,7 +4,7 @@ import io.ktor.server.application.*
 import io.ktor.server.thymeleaf.*
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver
 
-fun Application.configureThymeleaf() {
+fun Application.configureTemplating() {
     install(Thymeleaf) {
         setTemplateResolver(ClassLoaderTemplateResolver().apply {
             prefix = "templates/"
