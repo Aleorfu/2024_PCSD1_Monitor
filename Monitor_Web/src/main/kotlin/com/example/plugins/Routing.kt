@@ -11,7 +11,18 @@ fun Application.configureRouting() {
     routing {
         staticResources("/static", "static")
         authenticate(FIREBASE_AUTH) {
-
+            get("/admin") {
+                call.respond(ThymeleafContent("Admin", emptyMap()))
+            }
+            get("/perfil") {
+                call.respond(ThymeleafContent("Perfil", emptyMap()))
+            }
+            get("/medico") {
+                call.respond(ThymeleafContent("Medico", emptyMap()))
+            }
+            get("/inicio") {
+                call.respond(ThymeleafContent("Usuario", emptyMap()))
+            }
         }
         get("/") {
             call.respondRedirect("/login")
@@ -19,20 +30,8 @@ fun Application.configureRouting() {
         get("/login") {
             call.respond(ThymeleafContent("Login", emptyMap()))
         }
-        get("/admin") {
-            call.respond(ThymeleafContent("Admin", emptyMap()))
-        }
         get("/newuser") {
             call.respond(ThymeleafContent("NewUser", emptyMap()))
-        }
-        get("/perfil") {
-            call.respond(ThymeleafContent("Perfil", emptyMap()))
-        }
-        get("/medico") {
-            call.respond(ThymeleafContent("Medico", emptyMap()))
-        }
-        get("/inicio") {
-            call.respond(ThymeleafContent("Usuario", emptyMap()))
         }
     }
 
