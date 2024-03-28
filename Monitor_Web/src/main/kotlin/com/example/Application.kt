@@ -11,6 +11,8 @@ fun main() {
 }
 
 fun Application.module() {
+    FirebaseAdmin.init()
+    configureAuthentication()
     configureRouting()
     configureTemplating()
 }
